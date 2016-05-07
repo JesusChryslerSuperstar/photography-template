@@ -5,79 +5,99 @@
   <meta name="description" content="Adam Dąbrowski Photography">
   <title>Kot Wariat wita w swoich progach</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Catamaran:200,400|Bad+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Catamaran:200,400|Bad+Script'
+  rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="myJava.js"></script>
 </head>
 
 <body>
   <!--Navigation-->
-  <div class="home">
- <a id="navigation"></a>
-<nav>
+  <div class="home test">
+    <div class="menu"><a name="navigation"></a>
+  <nav>
      <ul>
      <li><a href="#home">Home</a></li>
      <li><a href="#about">About Me</a></li>
      <li><a href="#porfolio">Portfolio</a></li>
      <li><a href="#contact">Contact</a></li>
-   </ul>
-   <hr>
+     </ul>
  </nav>
+ </div>
+ <hr>
+<div class="logo">
 
    <!-- End of Navigation -->
    <img src="logo.png" alt="Logo">
    <h1><b>JWOOD</b>Photography</h1>
    <!-- PLace button to scroll down-->
-   <h4>Click here to scroll</h4>
-   <img src="back/scroll.png" alt="Scroll">
+  <span>
+     <h4>Click here to scroll</h4>
+   <a href="#about"><img src="back/scroll.png" alt="Scroll"></a>
+ </span>
+ </div>
  </div>
    <!-- About me section -->
-<div .about>   <a id="about"></a>
-   <img src="photo/me.jpg" alt="That's me">
 
-   <h2>About Me</h2>
+
+<div class="about test">
+  <a name="about"></a>
+   <h1>About Me</h1>
+   <div class="row">
+<div class="col-6">
+   <img src="photo/me.jpg" alt="That's me">
+ </div>
+ <div class="col-6">
    <p>My name is Adam Dąbrowski, currently I live in Warsaw, Poland.
       I'm learing and practicing my web development skills. Other than that I'm a photographer, constant learner,
       go-to specialist when it comes to rules about elegant men's clothing and coffee enthusiast (although I still have no idea what the hell is "body" in coffee).
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     </p>
- <!-- PLace button to scroll down-->
- <h4>Keep on scrollin', there's still plenty to see :)</h4>
-<img src="back/scroll.png" alt="Scroll">
+</div>
+</div>
 
-  </div>
 
+  <span>
+    <h4>Keep on scrollin', there's still plenty to see :)</h4>
+  <a href="#portfolio"><img src="back/scroll.png" alt="Scroll"></a>
+  </span>
+    </div>
     <!-- End of About Me section -->
     <!-- Portfolio section -->
-  <div id="portfolio">  <h1>My portfolio</h1>
+  <div class="portfolio test"> <a name="portfolio"></a>
+     <h1>My portfolio</h1>
     <!-- Tu chyba powinny być miniatury zdjęć, ktore mozna powiekszyc, no ewentualnie spore zdjecia-->
-    <img src="photo/coast.jpg" alt="Coast in Morocco">
-    <img src="photo/food.jpg" alt="Moroccan rice">
-    <img src="photo/foodstand.jpg" alt="Foodstand in Marrakesh">
-    <img src="photo/goats.jpg" alt="Goats standing on a tree">
-    <img src="photo/grocery.jpg" alt="Mobile grocery store in Agadir">
-    <img src="photo/maciek.jpg" alt="Our friend Maciek">
-    <img src="photo/reading.jpg" alt="Morning keeping up to date in front of a cafe">
-    <img src="photo/street.jpg" alt="Moroccan streetphoto made by my Gazelle">
-    <img src="photo/sunset.jpg" alt="Moroccan sunset by the road">
-    <img src="photo/watch.jpg" alt="Watch laying on Sahara sand">
+    <div class="row">
+    <div class="col-2"><img src="photo/coast.jpg" alt="Coast in Morocco"></div>
+    <div class="col-2"><img src="photo/food.jpg" alt="Moroccan rice"></div>
+    <div class="col-2"><img src="photo/foodstand.jpg" alt="Foodstand in Marrakesh"></div>
+    <div class="col-2"><img src="photo/goats.jpg" alt="Goats standing on a tree"></div>
+    <div class="col-2"><img src="photo/grocery.jpg" alt="Mobile grocery store in Agadir"></div>
+    <div class="col-2"><img src="photo/maciek.jpg" alt="Our friend Maciek"></div>
+    <div class="col-2"><img src="photo/reading.jpg" alt="Morning keeping up to date in front of a cafe"></div>
+    <div class="col-2"><img src="photo/street.jpg" alt="Moroccan streetphoto made by my Gazelle"></div>
+    <div class="col-2"><img src="photo/sunset.jpg" alt="Moroccan sunset by the road"></div>
+    <div class="col-2"><img src="photo/watch.jpg" alt="Watch laying on Sahara sand"></div>
+  </div>
     <h4>Temptation is big to scroll down and get to contact me section right?</h4>
-     <img src="back/scroll.png" alt="Scroll">
+     <a href="#contact"><img src="back/scroll.png" alt="Scroll"></a>
   </div>
 
     <!-- Button to scroll further -->
-    <div id="contact">
+    <div class="contact test"><a name="contact"></a>
     <h1>Here's how you can contact me:</h1>
-    <h3>E-mail</h3>
-    <h2>adam.dabrowski@outlook.com</h2>
-    <h3>Phone</h3>
-    <h2>456 456 456</h2>
-    <h3>Or through one of my social media channels:</h3>
-    <button>Facebook</button>
-    <button>Twitter</button>
-    <button>Instagram</button>
+    <h3>e-mail</h3>
+    <h2><a href="mailto:adam.dabrowski@outlook.com">adam.dabrowski@outlook.com</a></h2>
+    <h3>phone</h3>
+    <h2>+48 456 456 456</h2>
+    <h3>social media</h3>
+  <a href="https://www.facebook.com/adam.dabrowski.355"><img src="back/facebook.png"></a>
+  <a href="https://twitter.com/Dabrowski_AD"><img src="back/twitter.png"></a>
+  <a href="https://www.instagram.com/adam_dabrowski"><img src="back/instagram.png"></a>
 </div>
-    <footer>
-    <h6> Page created based on JWOOD template, coded by me, that is Adam Dąbrowski.<br>All right reserved</h6>
-    </footer>
+<footer>
+<h6> Page created based on JWOOD template, coded by me, that is Adam Dąbrowski.<br>All right reserved</h6>
+</footer>
 
 </body>
 </html>
